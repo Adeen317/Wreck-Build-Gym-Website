@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <script src="JS/resp.js"></script>
     <link rel="stylesheet" href="static/style.css">
-    <title>Document</title>
+    <title>Wreck & Build</title>
 </head>
 <body>
-    <nav class="navbar" id="background">
-        <ul class="nav-list">
+    <nav class="navbar h-nav-resp" id="background">
+        <ul class="nav-list v-class-resp">
             <div class="logo"><img src="images/logo.JPG" alt="Not found"></div>
             <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#">Packages</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-        <div class="rightNav">
+        <div class="rightNav v-class-resp">
             <input type="text" name="search" id="search">
             <button class="btn btn-sm">
                 Search
             </button>
         </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </nav>
+    <div id="about">
     <section class="firstsection background" id="background">
-        <div class="box-main">
+        <div class="box-main" id="home">
             <div class="firsthalf">
                 <p class="Heading">Wreck & Build</p>
                 <p class="text-big">Get lean today!</p>
                 <p class="text-small">Welcome to our dynamic gym, where strength meets community. Get ready to transform your fitness journey with us!</p>
-                <button class="btn">Get Subscription Now! No registration fee!</button>
+                <button class="btn">Get Subscription Today!</button>
             </div>
             <div class="secondhalf">
                 <img src="images/home.jpg" alt="Gym image">
@@ -37,37 +44,67 @@
         </div>
     </section>
     <section class="section">
+        <div id="about">
         <div class="paras">
-        <p class="sectiontag text-big">hello</p>
-        <p class="sectionsubtag text-small">dwsaVaaasjkncbVHLWppppppppppppppweeeee
-            eeeeeeeeeeeefffffffffffffqqqqqqqqqqqqpppppppppppppp
-            ppppppppppppppppp </p>
+        <p class="sectiontag text-big">About Us</p>
+        <p class="sectionsubtag text-small">Welcome to Wreck & Build, where fitness meets motivation and dedication.
+            Our gym is more than just a place to work out;
+            it's a community dedicated to helping you achieve your fitness goals and live a healthier lifestyle. 
+            Step into our state-of-the-art facility, where every corner is designed with your fitness journey in mind. 
+            From cutting-edge equipment to expert-led classes, we have everything you need to push your limits and transform your body.
+            </p>
         </div>
-        <div class="thumbnail">
+        <div class="thumbnail1">
             <img src="images/logo.JPG" alt="logo" class="imgfluid">
         </div>
     </section>
     <section class="section section-left">
         <div class="paras">
-        <p class="sectiontag text-big">hello</p>
-        <p class="sectionsubtag text-small">dwsaVaaasjkncbVHLWppppppppppppppweeeee
-            eeeeeeeeeeeefffffffffffffqqqqqqqqqqqqpppppppppppppp
-            ppppppppppppppppp </p>
+        <p class="sectiontag text-big">Cardio</p>
+        <p class="sectionsubtag text-small">Our cardio zone boasts top-of-the-line machines, including treadmills, ellipticals, bikes, and rowers, 
+            ensuring you can get your heart pumping and calories burning. 
+            <!--Looking to build strength? Our weight training area features a wide range of free weights and resistance machines, perfect for sculpting muscles and improving overall strength.
+            But we're more than just equipment. Our passionate team of certified trainers is here to guide and motivate you every step of the way. 
+            Whether you're a beginner or a seasoned athlete, 
+            we'll work with you to create a personalized workout plan tailored to your goals and fitness level.
+            At [Gym Name], we believe that fitness is not just about physical strength, but also about mental resilience and overall well-being. 
+            That's why we're committed to providing a welcoming and inclusive space where you can feel empowered to be your best self, inside and out.
+            Ready to take the first step towards a healthier, happier you? Join us at Wreck & Build and let's make your fitness goals a reality together. 
+            Your journey starts here. --></p>
         </div>
         <div class="thumbnail">
-            <img src="images/logo.JPG" alt="logo" class="imgfluid">
+            <img src="https://source.unsplash.com/900x900/?fitness" alt="logo" class="imgfluid">
         </div>
     </section>
     <section class="section">
         <div class="paras">
-        <p class="sectiontag text-big">hello</p>
-        <p class="sectionsubtag text-small">dwsaVaaasjkncbVHLWppppppppppppppweeeee
-            eeeeeeeeeeeefffffffffffffqqqqqqqqqqqqpppppppppppppp
-            ppppppppppppppppp </p>
+        <p class="sectiontag text-big">Weight & Strength Training</p>
+        <p class="sectionsubtag text-small">Looking to build strength? Our weight training area features a wide range of free weights and resistance machines, perfect for sculpting muscles and improving overall strength.
+
+        </p>
         </div>
         <div class="thumbnail">
-            <img src="images/logo.JPG" alt="logo" class="imgfluid">
+            <img src="https://source.unsplash.com/900x900/?gym" alt="logo" class="imgfluid">
         </div>
     </section>
+    </div>
+    <section class="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter your email">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Leave us a message!"></textarea>
+            <button class="btn btn-dark">
+                Submit
+            </button>
+        </div>
+    </section>
+    <footer id="background">
+        <p class="text-footer">
+            Copyrights &copy; 2024-Adeen317-All rights reserved
+        </p>
+    </footer>
+    <script src="JS/resp.js"></script>
 </body>
 </html>
